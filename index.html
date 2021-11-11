@@ -16,7 +16,7 @@
             <p class="form-label">Nombre:</p>
             <input v-model="nombre" type="text">
         </div>
-        <p class="saludo">{{ saludo }}, {{nombre}}!</p>
+        <p class="saludo">{{ saludo }}, {{nombreConSaludo}}!</p>
         <p v-text="message"></p>
         <div v-html="htmlCard"></div>
         <button @click="imprimirEnConsola">Clickeame</button>

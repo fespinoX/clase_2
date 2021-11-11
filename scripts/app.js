@@ -11,10 +11,11 @@ var myapp = new Vue({
     methods: {
         imprimirEnConsola() {
             console.log(this.message);
-            return;
         }
     },
     computed: {
-
+        nombreConSaludo() {
+            return `${this.nombre}, como va?`;
+        }
     }
 })
