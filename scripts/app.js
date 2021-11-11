@@ -4,7 +4,8 @@ var myapp = new Vue({
       saludo: 'Hola',
       nombre: 'Miguel',
       message: 'El hierro nos ayuda a jugar',
-      htmlCard: `<span>Ahora la bebé tiene que dormir en la cuna</span>`
+      htmlCard: `<span>Ahora la bebé tiene que dormir en la cuna</span>`,
+      link: 'www.google.com'
 
     },
     methods: {
