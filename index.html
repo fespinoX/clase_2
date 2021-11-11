@@ -12,8 +12,13 @@
 <body>
     <div id="app">
         <h1>Clase 2</h1>
+        <p>Nombre:</p>
+        <input v-model="nombre" type="text">
         <p>{{ saludo }}, {{nombre}}!</p>
-        <p>{{ message }}</p>
+        <p v-text="message"></p>
+        <div v-html="htmlCard"></div>
+        <button @click="imprimirEnConsola">Clickeame</button>
+
     </div>
 </body>
 </html>

@@ -3,12 +3,14 @@ var myapp = new Vue({
     data: {
       saludo: 'Hola',
       nombre: 'Miguel',
-      message: 'El hierro nos ayuda a jugar'
+      message: 'El hierro nos ayuda a jugar',
+      htmlCard: `<span>Ahora la bebé tiene que dormir en la cuna</span>`
 
     },
-    methos: {
+    methods: {
         imprimirEnConsola() {
-            console.log('El hierro nos ayuda a jugar');
+            console.log(this.message);
+            return;
         }
     },
     computed: {
