@@ -2,4 +2,4 @@
 Código de la clase 3 de Coderhouse
 
 ## Version live
-https://fespinox.github.io/clase_3
+https://fespinox.github.io/ejercicios_coder/
