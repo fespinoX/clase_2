@@ -56,3 +56,11 @@ a {
     text-transform: uppercase;
     color: cyan;
 }
+
+.list-grey {
+    background: lightgray;
+}
+
+.list-transparent {
+    background: transparent;
+}

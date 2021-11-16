@@ -5,7 +5,31 @@ var myapp = new Vue({
       piojitosMsg: "Tiene piojitos",
       modoOscuro: true,
       mostrarMsg: true,
-      textBtn: "Ocultar mensaje"
+      textBtn: "Ocultar mensaje",
+      michis: [
+        {
+            nombre: 'Zelda',
+            pelo: 'largo',
+            color: 'gris'
+        },
+        {
+            nombre: 'Minerva',
+            pelo: 'corto',
+            color: 'blanco y gris'
+        },
+        {
+            nombre: 'Lady',
+            pelo: 'corto',
+            color: 'tricolor'
+        },
+        {
+            nombre: 'Mariah',
+            pelo: 'largo',
+            color: 'carey'
+        },
+
+
+      ]
     },
     methods: {
         changeTheme() {
