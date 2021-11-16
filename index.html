@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coderhouse Vue.js - Clase 2</title>
+    <title>Coderhouse Vue.js - Clase 3</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <script defer src="scripts/app.js"></script>
 </head>
 <body>
     <div id="app">
-        <h1>Clase 2</h1>
-        <div>
-            <p class="form-label">Nombre:</p>
-            <input v-model="nombre" type="text">
-        </div>
-        <p class="saludo">{{ saludo }}, {{nombreConSaludo}}!</p>
-        <p v-text="message"></p>
-        <div v-html="htmlCard"></div>
-        <button @click="imprimirEnConsola">Clickeame</button>
-        <p>Tenés dudas? <a :href="link">Googlealo</a></p>
+        <h1>Clase 3</h1>
+        <div :class="modoOscuro ? 'dark' : 'light'">
 
+            <p v-if="tienePiojitos" lass="saludo">{{piojitosMsg}}!</p>
+            <p v-else>No tiene piojitos</p>
+            
+            <p v-if="mostrarMsg">Ahora me ves...</p>
+            <button @click="toggleMsg">{{ textBtn }}</button>
+
+            <button @click="changeTheme">Cambiar tema</button>
+
+        </div>
     </div>
 </body>
 </html>

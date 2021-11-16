@@ -1,21 +1,31 @@
 var myapp = new Vue({
     el: '#app',
     data: {
-      saludo: 'Hola',
-      nombre: 'Miguel',
-      message: 'El hierro nos ayuda a jugar',
-      htmlCard: `<span>Ahora la bebé tiene que dormir en la cuna</span>`,
-      link: 'www.google.com'
-
+      tienePiojitos: true,
+      piojitosMsg: "Tiene piojitos",
+      modoOscuro: true,
+      mostrarMsg: true,
+      textBtn: "Ocultar mensaje"
     },
     methods: {
-        imprimirEnConsola() {
-            console.log(this.message);
+        changeTheme() {
+            if (this.modoOscuro) {
+                this.modoOscuro = false;
+            } else {
+                this.modoOscuro = true;
+            }
+        },
+        toggleMsg() {
+            if (this.mostrarMsg) {
+                this.mostrarMsg = false;
+                this.textBtn = "Mostrar mensaje";
+            } else {
+                this.mostrarMsg = true;
+                this.textBtn = "Ocultar mensaje";
+            }
         }
     },
     computed: {
-        nombreConSaludo() {
-            return `${this.nombre}, como va?`;
-        }
+
     }
 })

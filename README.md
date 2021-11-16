@@ -1,5 +1,5 @@
-# clase 2 Vue.js Coderhouse
-Código de la clase 2 de Coderhouse
+# clase 3 Vue.js Coderhouse
+Código de la clase 3 de Coderhouse
 
 ## Version live
-https://fespinox.github.io/clase_2/
+https://fespinox.github.io/clase_3
