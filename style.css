@@ -13,3 +13,24 @@ h1 {
 p {
     font-size: 1.2rem;
 }
+
+.card-comida {
+    margin: 20px 0;
+    max-width: 40vw;
+}
+
+.card-comida ul {
+    list-style: none;
+    padding: 10px;
+}
+
+.card-comida .comida-title {
+    font-weight: 600;
+    font-size: 2rem;
+    color: tomato;
+}
+
+.card-comida .comida-costo {
+    color: coral;
+    font-size: 1.2rem;
+}

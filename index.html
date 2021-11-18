@@ -18,9 +18,13 @@
         <div class="container">
             <div class="row">
                 <h1 class="my-4">Clase {{numeroDeClase}}</h1>
-
-                <nombre-componente></nombre-componente>
-
+                
+                <div class="col-12">
+                    <lista-comida v-for="(jitem, j) in comidas" :key="j" :titulo="jitem.titulo" :costo="jitem.costo" :portada="jitem.portada"></lista-comida>
+                </div>
+                <div class="col-12 mt-5">
+                    <lista-michis v-for="(item, i) in michis" :key="i" :nombre="item.nombre" :edad="item.edad" :raza="item.raza"></nombre-componente>
+                </div>
             </div>
         </div>
     </div>
