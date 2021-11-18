@@ -19,7 +19,7 @@
             <div class="row">
                 <h1 class="my-4">Clase {{numeroDeClase}}</h1>
                 
-                <div class="col-12">
+                <div class="col-12 d-flex">
                     <lista-comida v-for="(jitem, j) in comidas" :key="j" :titulo="jitem.titulo" :costo="jitem.costo" :portada="jitem.portada"></lista-comida>
                 </div>
                 <div class="col-12 mt-5">
