@@ -15,9 +15,13 @@ p {
 }
 
 .card-comida {
-    margin: 20px 0;
-    max-width: 40vw;
+    width: 25%;
+    margin: 20px 5px;
     border: 1px solid coral;
+}
+
+.card-comida img {
+    height: ;
 }
 
 .card-comida ul {
