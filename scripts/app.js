@@ -50,7 +50,7 @@ var myapp = new Vue({
                 edad: 2,
             },
             {
-                nombre: 'Zelda',
+                nombre: 'Lady',
                 edad: 6,
             },
         ],
